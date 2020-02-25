@@ -1,0 +1,205 @@
+body{
+width: 100%;
+height: 100%;
+margin: 0;
+
+}
+#background{
+  width: 100%;
+  height: 100%;
+left:0;
+right: 0;
+bottom: 0;
+min-width: 0;
+min-height: 0
+-webkit-filter:brightness(0.9);
+  position: fixed;
+  z-index: -10;
+}
+#titleimage{
+   width: 60%;
+  height: 30%;
+left:20%;
+top:0;
+min-width: 0;
+min-height: 0
+-webkit-filter:brightness(0.9);
+  position: fixed;
+  z-index: -8;
+}
+
+.title{
+  text-align: center;
+  height: 130px;
+  width: 50%;
+  line-height: 200px;
+  position:relative;
+  left: 25%;
+  border-radius: 20px;
+
+
+
+
+
+
+
+
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(Majesti-Banner-Heavy.otf);
+}
+
+
+
+
+h1{
+
+  margin: 0;
+  color:#F67280;
+  font-size: 75px;
+  line-height: 80px;
+  -webkit-text-stroke:2px;
+    -webkit-text-stroke-color:white;
+    position: absolute;
+    top:30px;
+
+
+
+    font-family: myFirstFont;
+
+
+
+}
+.intro{
+  width: 100%;
+  height: 180px;
+  /* background-color: white; */
+
+
+}
+.text{
+  width:100%;
+  height:180px;
+  margin: 0;
+  text-align: center;
+  font-family: myFirstFont;
+  font-size: 18px;
+}
+.MKT{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  margin-left:  25px;
+  position: relative;
+
+}
+.mkt{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  margin-left:  25px;
+  border-radius: 25px;
+  opacity: 0.7;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: -1;
+
+}
+.mkt:hover{
+  opacity: 1;
+
+}
+.rank{
+  position: absolute;
+  margin-right: 20px;
+  margin-left:  25px;
+  border-radius: 25px;
+  width:150px;
+  height: 150px;
+  background: pink;
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+  font-size: 50px;
+  font-family: myFirstFont;
+  bottom:0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+
+
+}
+.rank:hover{
+  opacity: 0.8;
+}
+
+#button:hover{
+  color:grey;
+  font-size: 23px;
+}
+
+
+/*
+.img-group {
+  position: relative;
+  display: inline-block;
+}
+
+.img-tip {
+  position: absolute;
+  bottom: 0;
+  background: #333;
+  color: #fff;
+  opacity: 0.6;
+  display: none;
+}
+
+.img-group:hover .img-tip {
+  display: block;
+  width: 100%;
+  text-align: center;
+} */
+.bar{
+  /* height:100px; */
+  /* width:50px;
+  background-color: seagreen;
+  margin:4px;
+  display: inline; */
+  /* vertical-align: top; */
+  /* position: absolute;
+  bottom: 0; */
+  /* float: left; */
+
+     /* width: 300px;
+     height: 300px;
+     background:lightgray;
+     opacity: 0.6;
+     -moz-border-radius: 50px;
+     -webkit-border-radius: 50px;
+     border-radius: 50px;
+     display:inline-block; */
+
+
+ }
+}
+.viz{
+  width:100%;
+  height: 500px;
+  position:relative;
+
+
+}
+span{
+  height: 50px;
+  width: 50px;
+  background-color:#F0F4C3;
+  border-radius: 50%;
+  /* opacity: 0.8; */
+  display: inline-block;
+  /* margin: 20px; */
+  box-shadow:2px 2px 2px 2px rgba(0,0,0,0);
+  position:absolute;
+}
