@@ -6,7 +6,7 @@ let viz = d3.select("#viz-container")
   .append("svg")
     .attr("id","viz")
     .attr("width",1000)
-    .attr("height",545)
+    .attr("height",530)
   ;
 
 //load data
@@ -76,18 +76,29 @@ function color(myData){
 
 }
 
+function positionY (myData){
+  let time = myData["time"]
+  let timeObject = new Date(time);
+   console.log(timeObject);
+// Sat Dec 30 1899 08:06:00 GMT+0805 (China Standard Time)
+let newTime = timeObject.getHours()-6;
+return newTime*42
+// 8
+// timeObject.getMinutes()
+}
+
 function gotData(incomingData){
 
 
-  function randomNumber(){
-    // return Math.random()*780;
-  let n1 = Math.floor(Math.random() * 750) + 20;
-  Math.round(n1)*1000;
-  return n1;
-
-
-
-}
+//   function randomNumber(){
+//     // return Math.random()*780;
+//   let n1 = Math.floor(Math.random() * 750) + 20;
+//   Math.round(n1)*1000;
+//   return n1;
+//
+//
+//
+// }
 
 
 
@@ -117,7 +128,7 @@ function gotData(incomingData){
        // .attr("points","positionX,20 positionX,25")
 
        .attr("cx",positionX)
-       .attr("cy",randomNumber)
+       .attr("cy",positionY)
 
 
 
