@@ -6,7 +6,7 @@ let viz = d3.select("#container")
     .attr("class", "viz")
     .attr("width", w)
     .attr("height", h)
-    .style("background-color", "#e3d6c5")
+    // .style("background-color", "#e3d6c5")
 ;
 
 

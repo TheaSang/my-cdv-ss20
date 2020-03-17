@@ -6,7 +6,7 @@ let viz = d3.select("#container")
     .attr("class", "viz")
     .attr("width", w)
     .attr("height", h)
-    .style("background-color", "#e3d6c5")
+    // .style("background-color", "#e3d6c5")
 ;
 
  function gotaudioColor(myData){
@@ -126,65 +126,65 @@ let viz = d3.select("#container")
 
 function gotData(incomingData){
   function namePosition(d,i){
-    let x=40;
+    let x=950;
 
     if (d.name == "ChuChu Wen"){
-      let y = 50;
-      return "translate("+x+","+y+")";
-    }else if (d.name=="Da Yu") {
-      let y = 75;
-      return "translate("+x+","+y+")"
-    }else if (d.name=="Da An") {
-      let y = 100;
-      return "translate("+x+","+y+")";
-    }else if (d.name=="Last Dance") {
-      let y = 125;
-      return "translate("+x+","+y+")";
-    }else if (d.name=="Someone Like You") {
-      let y = 150;
-      return "translate("+x+","+y+")";
-    }else if (d.name=="Yu Jian") {
-      let y = 175;
-      return "translate("+x+","+y+")";
-    }else if (d.name=="Womxnly") {
       let y = 200;
       return "translate("+x+","+y+")";
-    }else if (d.name=="The Longest Movie") {
+    }else if (d.name=="Da Yu") {
       let y = 225;
-      return "translate("+x+","+y+")";
-    }else if (d.name=="Xiao Ban") {
+      return "translate("+x+","+y+")"
+    }else if (d.name=="Da An") {
       let y = 250;
       return "translate("+x+","+y+")";
-    }else if (d.name=="When You") {
+    }else if (d.name=="Last Dance") {
       let y = 275;
       return "translate("+x+","+y+")";
-    }else if (d.name=="Take Everything You Want") {
+    }else if (d.name=="Someone Like You") {
       let y = 300;
       return "translate("+x+","+y+")";
-    }else if (d.name=="Tenderness") {
+    }else if (d.name=="Yu Jian") {
       let y = 325;
       return "translate("+x+","+y+")";
-    }else if (d.name=="Hong Dou") {
+    }else if (d.name=="Womxnly") {
       let y = 350;
       return "translate("+x+","+y+")";
-    }else if (d.name=="Wuyizhijian") {
+    }else if (d.name=="The Longest Movie") {
       let y = 375;
       return "translate("+x+","+y+")";
-    }else if (d.name=="Lemon") {
+    }else if (d.name=="Xiao Ban") {
       let y = 400;
       return "translate("+x+","+y+")";
-    }else if (d.name=="Ni Feng") {
+    }else if (d.name=="When You") {
       let y = 425;
       return "translate("+x+","+y+")";
-    }else if (d.name=="Say it again") {
+    }else if (d.name=="Take Everything You Want") {
       let y = 450;
       return "translate("+x+","+y+")";
-    }else if (d.name=="Zhi Zu") {
+    }else if (d.name=="Tenderness") {
       let y = 475;
+      return "translate("+x+","+y+")";
+    }else if (d.name=="Hong Dou") {
+      let y = 500;
+      return "translate("+x+","+y+")";
+    }else if (d.name=="Wuyizhijian") {
+      let y = 525;
+      return "translate("+x+","+y+")";
+    }else if (d.name=="Lemon") {
+      let y = 550;
+      return "translate("+x+","+y+")";
+    }else if (d.name=="Ni Feng") {
+      let y = 575;
+      return "translate("+x+","+y+")";
+    }else if (d.name=="Say it again") {
+      let y = 600;
+      return "translate("+x+","+y+")";
+    }else if (d.name=="Zhi Zu") {
+      let y = 625;
       return "translate("+x+","+y+")";
 
     }else if (d.name=="Ti Mian") {
-      let y = 500;
+      let y = 650;
       return "translate("+x+","+y+")";
     }
 
@@ -210,23 +210,23 @@ namedatagroups.attr("transform",namePosition);
 //////////////////////////////////////
 
 function whyPosition(d,i){
-  let x=40;
+  let x=450;
   if (d.why== "Listen frequently"){
-    let y=600;
+    let y=350;
     return "translate("+x+","+y+")"
   }else if (d.why=="From my favourite band") {
-    let y = 625;
+    let y = 375;
     return "translate("+x+","+y+")"
   }else if (d.why=="Mentioned by friends") {
-    let y = 650;
+    let y = 400;
     return "translate("+x+","+y+")"
   }
   else if (d.why=="Unknow") {
-    let y = 675;
+    let y = 425;
     return "translate("+x+","+y+")"
   }
   else if (d.why=="Used to like") {
-    let y = 700;
+    let y = 450;
     return "translate("+x+","+y+")"
   }
 }
@@ -250,12 +250,12 @@ whydatagroups.attr("transform",whyPosition);
 ////////////////////////////////////
 
 function audioPosition(d,i){
-  let x=400;
+  let x=700;
   if (d.audiable== "yes"){
-    let y=50;
+    let y=200;
     return "translate("+x+","+y+")"
   }else if (d.audiable=="no") {
-    let y = 75;
+    let y = 225;
     return "translate("+x+","+y+")"
   }
 
@@ -280,41 +280,41 @@ audiodatagroups.attr("transform",audioPosition);
 
 /////////////////////////////////////////////////////
 function doingPosition(d,i){
-  let x=400;
+  let x=700;
   if(d.whatAmIDoing == "Study"){
-    let y =175;
+    let y =325;
     return "translate("+x+","+y+")"
   }else if(d.whatAmIDoing == "Before nap"){
-    let y =200;
+    let y =350;
     return "translate("+x+","+y+")"
   }else if(d.whatAmIDoing == "Break"){
-    let y =225;
+    let y =375;
     return "translate("+x+","+y+")"
   }else if(d.whatAmIDoing == "Before sleep"){
-    let y =250;
+    let y =400;
     return "translate("+x+","+y+")"
   }else if(d.whatAmIDoing == "Bilibili"){
-    let y =275;
+    let y =425;
     return "translate("+x+","+y+")"
   }
   else if(d.whatAmIDoing == "Chat with friends"){
-    let y =300;
+    let y =450;
     return "translate("+x+","+y+")"
   }else if(d.whatAmIDoing == "Grab food"){
-    let y =325;
+    let y =475;
     return "translate("+x+","+y+")"
   }else if(d.whatAmIDoing == "Take exercise"){
-    let y =350;
+    let y =500;
     return "translate("+x+","+y+")"
   }else if(d.whatAmIDoing == "Take shower"){;
-    let y =375;
+    let y =525;
     return "translate("+x+","+y+")"
   }else if(d.whatAmIDoing == "Wake up"){;
-    let y =400;
+    let y =550;
     return "translate("+x+","+y+")"
   }
   else{
-    let y =425;
+    let y =575;
     return "translate("+x+","+y+")"
   }
 }
@@ -336,15 +336,15 @@ let doingtext = doingdatagroups
 doingdatagroups.attr("transform",doingPosition);
 /////////////////////////////////////
 function brightPosition(d,i){
-  let x=400;
+  let x=450;
   if (d.degreeOfLight== "Bright"){
-    let y=550;
+    let y=200;
     return "translate("+x+","+y+")"
   }else if (d.degreeOfLight=="Medium") {
-    let y = 575;
+    let y = 225;
     return "translate("+x+","+y+")"
   }else{
-    let y=600
+    let y=250;
     return "translate("+x+","+y+")"
   }
 

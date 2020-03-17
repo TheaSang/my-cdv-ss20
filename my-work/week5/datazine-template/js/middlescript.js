@@ -157,6 +157,169 @@ function gotdoingColor(myData){
   }
 }
 function gotData(incomingData){
+
+
+/////////////////////////////////////////////////////
+let lineGenerator = d3.line()
+ .curve(d3.curveCardinal);
+
+console.log(incomingData[0])
+let lines = [];
+for(let i = 0 ; i < incomingData.length; i++){
+  console.log("loop");
+  let thisLine = [];
+  let d = incomingData[i];
+
+
+
+  let padding = 40
+  let yScale = d3.scaleLinear().domain([7,23]).range([padding,500-padding]);
+
+  let time = d.time;
+  let timeObject = new Date(time);
+
+   let newTime = timeObject.getHours();
+  let x0= yScale(newTime);
+  let y0=(h/80)*i+25;
+    thisLine.push( [x0,y0] )
+
+
+  let x1 = 500;
+  let y1 = (h/80)*i+25;
+  thisLine.push( [x1,y1] )
+
+  let x2 = 860
+  let y2;
+
+  if(d.whatAmIDoing == "Study"){
+    y2 =50;
+  }else if(d.whatAmIDoing == "Before nap"){
+    y2 =120;
+  }else if(d.whatAmIDoing == "Break"){
+    y2 =190;
+  }else if(d.whatAmIDoing == "Before sleep"){
+    y2 =260;
+  }else if(d.whatAmIDoing == "Bilibili"){
+   y2 =330;
+  }
+  else if(d.whatAmIDoing == "Chat with friends"){
+    y2 =400;
+  }else if(d.whatAmIDoing == "Grab food"){
+    y2 =470;
+  }else if(d.whatAmIDoing == "Take exercise"){
+    y2 =540;
+  }else if(d.whatAmIDoing == "Take shower"){
+    y2 =610;
+  }else if(d.whatAmIDoing == "Wake up"){
+    y2 =680;
+  }
+  else{
+    y2 =750;
+  }
+  thisLine.push([x2, y2] )
+  //
+  let x3 =1220
+  let y3;
+  if (d.why== "Listen frequently"){
+    y3=200;
+  }else if (d.why=="From my favourite band") {
+    y3 = 300;
+  }else if (d.why=="Mentioned by friends") {
+    y3 = 400;
+  }
+  else if (d.why=="Unknow") {
+    y3 = 500;
+  }
+  else if (d.why=="Used to like") {
+    y3 = 600;;
+}
+thisLine.push([x3, y3] )
+  let x4=1580;
+  let y4;
+  if (d.audiable == "yes"){
+    y4= 300;
+  }else if (d.audiable=="no") {
+    y4 = 500;
+  }
+thisLine.push([x4, y4] )
+
+ let x5 = 1900;
+ let y5;
+ if (d.degreeOfLight == "Bright"){
+    y5=200;
+ }else if (d.degreeOfLight=="Medium") {
+    y5 = 400;
+ }else if (d.degreeOfLight=="Dark") {
+    y5 = 600;
+ }
+thisLine.push([x5, y5] )
+
+let x6=2300;
+let y6;
+if (d.name == "ChuChu Wen"){
+  y6 = 40;
+}else if (d.name=="Da Yu") {
+  y6 = 80;
+}else if (d.name=="Da An") {
+ y6 = 120;
+}else if (d.name=="Last Dance") {6
+  y6 = 160;
+}else if (d.name=="Someone Like You") {
+ y6 = 200;
+}else if (d.name=="Yu Jian") {
+  y6 = 240;
+}else if (d.name=="Womxnly") {
+  y6= 280;
+}else if (d.name=="The Longest Movie") {
+  y6 = 320;
+}else if (d.name=="Xiao Ban") {
+  y6 = 360;
+}else if (d.name=="When You") {
+  y6 = 400;
+}else if (d.name=="Take Everything You Want") {
+  y6 = 440;
+}else if (d.name=="Tenderness") {
+  y6 = 480;
+}else if (d.name=="Hong Dou") {
+  y6 = 520;
+}else if (d.name=="Wuyizhijian") {
+  y6 = 560;
+}else if (d.name=="Lemon") {
+  y6 = 600;
+}else if (d.name=="Ni Feng") {
+ y6 = 640;
+}else if (d.name=="Say it again") {
+  y6 = 680;
+}else if (d.name=="Zhi Zu") {
+   y6 = 720;
+}else if (d.name=="Ti Mian") {
+  y6 = 760;
+}
+thisLine.push( [x6,y6] )
+
+  lines.push(thisLine);
+}
+console.log(lines);
+
+let result = lines.filter(lines => lines.y6=680);
+
+console.log(result);
+
+let datagroups8= viz.selectAll(".datagroupscurve").data(lines).enter()
+  .append("g")
+  .attr("class","datagroupscurve")
+;
+
+ let mycurve = datagroups8.append('path')
+ .attr('d', lineGenerator)
+ .attr("stroke","white")
+ .attr("fill","none")
+ ;
+
+
+
+
+////////////////////////////////////////////////////
 function getGroupPosition(d,i){
   let x=0;
   let y=(h/80)*i+25;
@@ -173,8 +336,6 @@ let initialcircle = datagroups.append("circle")
 .attr("cx",500)
 .attr("fill",nameColor)
 ;
-
-/////////////////////////////////////////////////////
 
   datagroups.attr("transform",getGroupPosition);
 
@@ -646,129 +807,6 @@ let doingtowers = datagroups7
 datagroups7.attr("transform",getGroupPosition7);
 /////////////////////////////////////////////////////////////////////
 
-let datagroups8= viz.selectAll(".datagroupscurve").data(incomingData).enter()
-    .append("g")
-     .attr("class","datagroupscurve")
-     ;
-
-
-
-     // function getinitialPosition1(d,i){
-
-  //      let time = d.time;
-
-  //      let timeObject = new Date(time);
-  //     console.log(timeObject);
-  //       let newTime = timeObject.getHours();
-  //      let x1= yScale(newTime);
-  //      let y1=(h/80)*i+25;
-       // let x1= 500;
-       // let y1=(h/80)*i+25;
-       // if(d.whatAmIDoing == "Study"){
-       //    x2=860;
-       //   y2 =50;
-       //   return [[x1,y1],[x2,y2]];
-       // }else if(d.whatAmIDoing == "Before nap"){
-       //       x2=860;
-       //      y2 =120;
-       //       return [[x1,y1],[x2,y2]];
-       // }else if(d.whatAmIDoing == "Before sleep"){
-       //      x2=860;
-       //      y2 =190;
-       //       return [[x1,y1],[x2,y2]];
-       // }else if(d.whatAmIDoing == "Break"){
-       //      x2=860;
-       //      y2 =260;
-       //       return [[x1,y1],[x2,y2]];
-       // }else if(d.whatAmIDoing == "Bilibili"){
-       //      x2=860;
-       //      y2 =330;
-       //       return [[x1,y1],[x2,y2]];
-       // }
-       // else if(d.whatAmIDoing == "Chat with friends"){
-       //      x2=860;
-       //      y2 =400;
-       //       return [[x1,y1],[x2,y2]];
-       // }else if(d.whatAmIDoing == "Grab food"){
-       //   x2=860;
-       //   y2 =470;
-       //    return [[x1,y1],[x2,y2]];
-       // }else if(d.whatAmIDoing == "Take exercise"){
-       //   x2=860;
-       //    y2 =540;
-       //    return [[x1,y1],[x2,y2]];
-       // }else if(d.whatAmIDoing == "Take shower"){
-       //   x2=860;
-       //    y2 =610;
-       //      return [[x1,y1],[x2,y2]];
-       // }else if(d.whatAmIDoing == "Wake up"){
-       //      x2=860;
-       //     y2 =680;
-       //       return [[x1,y1],[x2,y2]];
-       // }
-
-       // else if (d.why== "Listen frequently"){
-       //   let x3=1220;
-       //   let y3=200;
-       //
-       // }else if (d.why=="From my favourite band") {
-       //   let x3 = 1220;
-       //   let y3 = 500;
-       //
-       // }else if (d.why=="Mentioned by friends") {
-       //   let x = 1220;
-       //   let y = 400;
-       //
-       // }
-       // else if (d.why=="Unknow") {
-       //   let x = 1220;
-       //   let y = 500;
-       //
-       // }
-       // else if (d.why=="Used to like") {
-       //   let x = 1220;
-       //   let y = 600;
-       //
-       // }
-
-  //
-  // let points =  [
-  //     [x1, y1],
-  //     [x2, y2],
-  //     // [x3, y3],
-  //   ];
-  //   return points;
-  // };
-
-
-///////////////////////////////
-  // let points =  [
-  //     [100, 200],
-  //     [200, 80],
-  //     [600, 500],
-  //   ];
-
-/////////////////////////
-// function points(d,i){
-//   let points = [
-//       [100, 200],
-//       [200, 80],
-//       [600, 500],
-//     ];
-//     return points;
-// }
-// // ////////////////////////
-
-
-    // let lineGenerator = d3.line()
-    //  .curve(d3.curveCardinal);
-    // let  pathData = lineGenerator(getinitialPosition1());
-    //
-    //  let mycurve = datagroups7.append('path')
-    //  .attr('d', pathData)
-    //  .attr("stroke","white")
-    //  .attr("fill","none")
-    //  ;
 
 }
 d3.json("data.json").then(gotData);
