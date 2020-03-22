@@ -25,7 +25,7 @@ let viz = d3.select("#container")
    }else if (myData["degreeOfLight"]=="Medium") {
      return "grey";
    }else{
-     return "white"
+     return "#0c1825";
    }
 
  }
@@ -234,10 +234,21 @@ let whydatagroups = viz.selectAll(".datagroupwhy").data(incomingData).enter()
     .append("g")
      .attr("class","whygroups")
      ;
-let whycircle = whydatagroups
-.append("circle")
-.attr("r",8)
-.attr("fill",gotwhyColor);
+     function getimagePosition6(d,i){
+       let x1=-75;
+       let y1 =-26;
+         return "translate("+x1+","+y1+") scale(0.30)"
+
+     }
+
+     let shape6 = ' <polygon  points="219,110 206,70 240,46 274,70 261,110 "/>'
+   let whyShape=whydatagroups.append("g").attr("class","customShape").html(shape6);
+   whyShape.attr("transform",getimagePosition6);
+   whyShape.attr("stroke",gotdoingColor).attr("fill",gotwhyColor).attr("stroke","none");
+// let whycircle = whydatagroups
+// .append("circle")
+// .attr("r",8)
+// .attr("fill",gotwhyColor);
 let whytext = whydatagroups
 .append("text")
 .text(function(d){return(d.why)})
@@ -264,10 +275,22 @@ let audiodatagroups = viz.selectAll(".datagroupaudio").data(incomingData).enter(
     .append("g")
      .attr("class","audiogroups")
      ;
-let audiocircle = audiodatagroups
-.append("circle")
-.attr("r",8)
-.attr("fill",gotaudioColor);
+// let audiocircle = audiodatagroups
+// .append("circle")
+// .attr("r",8)
+// .attr("fill",gotaudioColor);
+function getimagePosition2(d,i){
+  let x1=-10;
+  let y1 =-10;
+    return "translate("+x1+","+y1+") scale(0.40)"
+
+}
+
+let shape2 = ' <polygon points="0,20 20,45 40,20 20,-5 "/>'
+let audioShape=audiodatagroups.append("g").attr("class","customShape").html(shape2);
+audioShape.attr("transform",getimagePosition2);
+audioShape.attr("fill",gotaudioColor).attr("stroke","none");
+
 let audiotext = audiodatagroups
 .append("text")
 .text(function(d){return(d.audiable)})
@@ -322,10 +345,21 @@ let doingdatagroups = viz.selectAll(".datagroupdoing").data(incomingData).enter(
     .append("g")
      .attr("class","doinggroups")
      ;
-let doingcircle = doingdatagroups
-.append("circle")
-.attr("r",8)
-.attr("fill",gotdoingColor);
+// let doingcircle = doingdatagroups
+// .append("circle")
+// .attr("r",8)
+// .attr("fill",gotdoingColor);
+function getimagePosition7(d,i){
+  let x1=-13;
+  let y1 =-10;
+    return "translate("+x1+","+y1+") scale(0.10)"
+
+}
+
+  let shape7 = '  <polygon points="100,0 160,180 10,60 190,60 40,180" style="stroke-width:1;"/>'
+let doingShape=doingdatagroups.append("g").attr("class","customShape").html(shape7);
+doingShape.attr("transform",getimagePosition7);
+doingShape.attr("stroke",gotdoingColor).attr("fill",gotdoingColor);
 let doingtext = doingdatagroups
 .append("text")
 .text(function(d){return(d.whatAmIDoing)})
@@ -353,10 +387,22 @@ let brightdatagroups = viz.selectAll(".datagroupbright").data(incomingData).ente
     .append("g")
      .attr("class","brightgroups")
      ;
-let brightcircle = brightdatagroups
-.append("circle")
-.attr("r",8)
-.attr("fill",gotBrightColor);
+// let brightcircle = brightdatagroups
+// .append("circle")
+// .attr("r",8)
+// .attr("fill",gotBrightColor);
+function getimagePosition3(d,i){
+  let x1=-14;
+  let y1 =-15;
+    return "translate("+x1+","+y1+") scale(0.09)"
+
+}
+
+let shape3 = ' <polygon points="10,10 10,200 200,200 "/>'
+let lightShape=brightdatagroups.append("g").attr("class","customShape").html(shape3);
+lightShape.attr("transform",getimagePosition3);
+lightShape.attr("stroke",gotdoingColor).attr("fill",gotBrightColor).attr("stroke","none");
+
 let brighttext = brightdatagroups
 .append("text")
 .text(function(d){return(d.degreeOfLight)})
