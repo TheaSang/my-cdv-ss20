@@ -1,0 +1,140 @@
+[
+  {"name":"shenyang",
+    "longitude":"123.429092",
+    "latitude":"41.796768"
+  },
+  {"name":"changchun",
+  "longitude":"125.324501",
+  "latitude":"43.886841"
+  },
+  {"name":"haerbin",
+  "longitude":"126.642464",
+  "latitude":"45.756966"
+  },
+  {"name":"beijing",
+  "longitude":"116.405289",
+  "latitude":"39.904987"
+  },
+  {"name":"tianjin",
+  "longitude":"117.190186",
+  "latitude":"39.125595"
+  },
+  {"name":"huhehaote",
+  "longitude":"111.751990",
+  "latitude":"40.841490"
+  },
+  {"name":"yinchuan",
+  "longitude":"106.232480",
+  "latitude":"38.486440"
+  },
+  {"name":"taiyuan",
+  "longitude":"112.549248",
+  "latitude":"37.857014"
+  },
+  {"name":"shijiazhuang",
+  "longitude":"114.502464",
+  "latitude":"38.045475"
+  },
+  {"name":"jinan",
+  "longitude":"117.000923",
+  "latitude":"36.675808"
+  },
+  {"name":"zhangzhou",
+  "longitude":"113.665413",
+  "latitude":"34.757977"
+  },
+  {"name":"xian",
+  "longitude":"108.948021",
+  "latitude":"34.263161"
+  },
+  {"name":"wuhan",
+  "longitude":"114.298569",
+  "latitude":"30.584354"
+  },
+  {"name":"nanjing",
+  "longitude":"118.76741",
+  "latitude":"32.041546"
+  },
+  {"name":"hefei",
+  "longitude":"117.283043",
+  "latitude":"31.861191"
+  },
+  {"name":"shanghai",
+  "longitude":"121.472641",
+  "latitude":"31.231707"
+  },
+  {"name":"changsha",
+  "longitude":"112.982277",
+  "latitude":"28.19409"
+  },
+  {"name":"nanchang",
+  "longitude":"115.892151",
+  "latitude":"28.676493"
+  },
+  {"name":"hangzhou",
+  "longitude":"120.15358",
+  "latitude":"30.287458"
+  },
+  {"name":"fuzhou",
+  "longitude":"119.306236",
+  "latitude":"26.075302"
+  },
+  {"name":"guangzhou",
+  "longitude":"113.28064",
+  "latitude":"23.125177"
+  },
+  {"name":"taibei",
+  "longitude":"121.5200760",
+  "latitude":"25.0307240"
+},
+  {"name":"haikou",
+  "longitude":"110.199890",
+  "latitude":"20.044220"
+},
+  {"name":"nanning",
+  "longitude":"108.320007",
+  "latitude":"22.82402"
+},
+  {"name":"chongqing",
+  "longitude":"106.504959",
+  "latitude":"29.533155"
+},
+  {"name":"kunming",
+  "longitude":"102.71225",
+  "latitude":"25.040609"
+},
+  {"name":"guiyang",
+  "longitude":"106.713478",
+  "latitude":"26.578342"
+},
+  {"name":"chengdu",
+  "longitude":"104.065735",
+  "latitude":"30.659462"
+},
+  {"name":"lanzhou",
+  "longitude":"103.834170",
+  "latitude":"36.061380"
+},
+  {"name":"xining",
+  "longitude":"101.777820",
+  "latitude":"36.617290"
+},
+  {"name":"lasa",
+  "longitude":"91.11450",
+  "latitude":"29.644150"
+},
+  {"name":"wulumuqi",
+  "longitude":"87.616880",
+  "latitude":"43.826630"
+},
+  {"name":"xianggang",
+  "longitude":"114.165460",
+  "latitude":"22.275340"
+},
+  {"name":"aomen",
+  "longitude":"113.549130",
+  "latitude":"22.198750"
+}
+
+
+]
