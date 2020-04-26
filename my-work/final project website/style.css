@@ -1,0 +1,236 @@
+body{
+  /* background-color: black; */
+  height: 100%;
+  width: 100%;
+  margin:0;
+
+}
+@font-face {
+  font-family: AbrilFatface-Regular;
+  src: url(AbrilFatface-Regular.ttf);
+}
+@font-face {
+  font-family: LobsterTwo-ltalic;
+  src: url(LobsterTwo-ltalic.ttf);
+}
+@font-face {
+  font-family: CormorantGaramond-Light;
+  src: url(CormorantGaramond-Light.ttf);
+}
+@font-face {
+  font-family: CormorantGaramond-MediumItalic;
+  src: url(CormorantGaramond-MediumItalic.ttf);
+}
+@font-face {
+  font-family: CormorantGaramond-Regular;
+  src: url(CormorantGaramond-Bold.ttf);
+}
+#background{
+  width: 100%;
+  height: 100%;
+left:0;
+right: 0;
+bottom: 0;
+min-width: 0;
+min-height: 0
+-webkit-filter:brightness(0.9);
+position: fixed;
+z-index: -10;
+}
+
+#Hogwarts{
+    width: 100%;
+    height:700px;
+    position:absolute;
+    top:75px;
+    z-index:-1;
+    opacity: 0.5;
+
+}
+
+.covercontainer{
+  height: 875px;
+  width: 100%;
+  position:absolute;
+  overflow: scroll;
+
+}
+.covercontainer::-webkit-scrollbar {display: none}
+/* COVER PALCE */
+.cover{
+  background-color: #304352;
+  position:absolute;
+  height:700px;
+  width: 100%;
+  top:75px;
+
+  /* background-color:#434e52; */
+}
+#titletext{
+  color: #eae7d9;
+  width: 400px;
+  font-size: 58px;
+  position:absolute;
+  text-align: left;
+  left:350px;
+  top:50px;
+  margin: 0;
+  font-family:AbrilFatface-Regular;
+
+}
+#introtext{
+  color: white;
+  font-size: 18px;
+  width:270px;
+  height: 400px;
+  position:absolute;
+  text-align: left;
+  left:850px;
+  top: 90px;
+  margin 0;
+  font-family:CormorantGaramond-Light;
+  line-height: 28px;
+
+}
+#explain1{
+  color: white;
+  font-size: 30px;
+  width:250px;
+  height: 100px;
+  position:absolute;
+  text-align: left;
+  left:350px;
+  top: 300px;
+  margin 0;
+  font-family:CormorantGaramond-MediumItalic;
+
+}
+#explain2{
+  color: white;
+  font-size: 20px;
+  width:250px;
+  height: 100px;
+  position:absolute;
+  text-align: left;
+  left:350px;
+  top: 440px;
+  margin 0;
+  font-family:CormorantGaramond-Light;
+
+
+}
+/* COVER OVER */
+.entertext{
+  /* background-color: black; */
+  position:absolute;
+  height:750px;
+  width: 100%;
+  top:900px;
+  /* background-color: white; */
+  margin: 0;
+
+  /* background-color:white; */
+}
+#typetext{
+  color:white;
+  position:absolute;
+  left:45%;
+}
+.vizText2{
+  height: 875px;
+  width: 100%;
+  position:absolute;
+  overflow: scroll;
+  top:2000px;
+  /* background-color: grey; */
+
+
+}
+.vizText2::-webkit-scrollbar {display: none}
+.box1{
+  top:600px;
+  width:100%;
+  height: 800px;
+  position:absolute;
+
+
+}
+.box2{
+
+  width:100%;
+  height: 800px;
+  position:absolute;
+  top:1450px;
+
+
+}
+.box3{
+  width:100%;
+  height: 800px;
+  position:absolute;
+  top:2300px;
+
+}
+.box4{
+  width:100%;
+  height: 800px;
+  position:absolute;
+  top:3150px
+
+}
+.box{
+  width:100%;
+  height: 800px;
+  position:absolute;
+  top:3500px;
+
+}
+
+#MM{
+  color:#eae7d9;
+  border:2px #eae7d9 solid;
+  margin: 0;
+  width:700px;
+  height: 120px;
+  text-align: center;
+  font-family: CormorantGaramond-Regular;
+  font-size: 20px;
+  left:350px;
+}
+#FM{
+  color:#eae7d9;
+  border:2px #eae7d9 solid;
+  margin: 0;
+  width:700px;
+  height: 120px;
+  text-align: center;
+  font-family: CormorantGaramond-Regular;
+  font-size: 20px;
+    left:350px;
+}
+#FF{
+  color:#eae7d9;
+  border:2px #eae7d9 solid;
+  margin: 0;
+  width:700px;
+  height: 120px;
+  text-align: center;
+  font-family: CormorantGaramond-Regular;
+  font-size: 20px;
+    left:350px;
+}
+#conclude{
+
+  color:#eae7d9;
+  border:2px #eae7d9 solid;
+  margin: 0;
+  width:700px;
+  height: 80px;
+  text-align: center;
+  font-family: CormorantGaramond-Regular;
+    left:350px;
+    font-size: 20px;
+
+
+
+}
