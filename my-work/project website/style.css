@@ -131,106 +131,51 @@ z-index: -10;
 
   /* background-color:white; */
 }
-#typetext{
-  color:white;
-  position:absolute;
-  left:45%;
-}
-.vizText2{
-  height: 875px;
-  width: 100%;
-  position:absolute;
-  overflow: scroll;
-  top:2000px;
-  /* background-color: grey; */
 
 
-}
-.vizText2::-webkit-scrollbar {display: none}
-.box1{
-  top:600px;
-  width:100%;
-  height: 800px;
-  position:absolute;
 
+.generalViz{
+    position:absolute;
+    top:875px;
+  }
 
-}
-.box2{
+article p{
+  margin: 500px 0px;
+  outline: #eae7d9 solid 1.5px;
 
-  width:100%;
-  height: 800px;
-  position:absolute;
-  top:1450px;
-
-
-}
-.box3{
-  width:100%;
-  height: 800px;
-  position:absolute;
-  top:2300px;
-
-}
-.box4{
-  width:100%;
-  height: 800px;
-  position:absolute;
-  top:3150px
-
-}
-.box{
-  width:100%;
-  height: 800px;
-  position:absolute;
-  top:3500px;
-
-}
-
-#MM{
-  color:#eae7d9;
-  border:2px #eae7d9 solid;
-  margin: 0;
-  width:700px;
-  height: 120px;
   text-align: center;
   font-family: CormorantGaramond-Regular;
-  font-size: 20px;
-  left:350px;
-}
-#FM{
-  color:#eae7d9;
-  border:2px #eae7d9 solid;
-  margin: 0;
-  width:700px;
-  height: 120px;
-  text-align: center;
-  font-family: CormorantGaramond-Regular;
-  font-size: 20px;
-    left:350px;
-}
-#FF{
-  color:#eae7d9;
-  border:2px #eae7d9 solid;
-  margin: 0;
-  width:700px;
-  height: 120px;
-  text-align: center;
-  font-family: CormorantGaramond-Regular;
-  font-size: 20px;
-    left:350px;
-}
-#conclude{
-
-  color:#eae7d9;
-  border:2px #eae7d9 solid;
-  margin: 0;
-  width:700px;
-  height: 80px;
-  text-align: center;
-  font-family: CormorantGaramond-Regular;
-    left:350px;
     font-size: 20px;
+    line-height: 30px;
+      color: #eae7d9;
+}
 
-
+article{
+  /* background-color: lightpink; */
+  width:45%;
+  height: 2700px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+.stickyItem{
+  height: 800px;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+  position: sticky;
+
+}
+.relationshipViz{
+  position:absolute;
+  top:1750px;
+}
+
+.fandomViz{
+    position:absolute;
+    top:5800px;
+  }
+  .deathViz{
+      position:absolute;
+      top:9875px;
+    }
