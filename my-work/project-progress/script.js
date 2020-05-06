@@ -197,68 +197,68 @@ let datagroups1 = generalviz.selectAll(".generaldatagroup").data(incomingData).e
 
         }
 
-// wholefiction();
+wholefiction();
 
-// function shortViz(enhancedData){
-//   function randomPosition(d,i){
-//
-//     if(d.words<200000){
-//       let x = Math.random()*500;
-//       let y=  Math.random()*700+100;
-//       return "translate("+x+","+y+")"
-//
-//     }else if(d.words>=200000,d.words<1000000){
-//       let x = Math.random()*200+600;
-//       let y=  Math.random()*200+300;
-//       return "translate("+x+","+y+")"
-//
-//     }else{
-//       let x = Math.random()*25+650;
-//       let y=  Math.random()*25+650;
-//       return "translate("+x+","+y+")"
-//     }
-//   };
-//   function colorh(d,i){
-//
-//     if(d.words<200000){
-//
-//       return "white";
-//
-//     }else if (d.words>=200000,d.words<1000000){
-//
-//       return "#F1F2B5";
-//
-//     }else{
-//       return "#12fff7";
-//     }
-//   };
-//
-//
-//
-//       // circles.transition().duration(1000).attr("fill",colorh);
-//       let textshort = generalviz
-//       .append("text")
-//       .text("Short Story")
-//       .attr("fill","white")
-//       .attr("x",550)
-//       .attr("y",115)
-//       ;
-//       let midshort = generalviz
-//       .append("text")
-//       .text("Novella")
-//       .attr("fill","white")
-//       .attr("x",850)
-//       .attr("y",515)
-//       ;
-//       let longshort = generalviz
-//       .append("text")
-//       .text("Novel")
-//       .attr("fill","white")
-//       .attr("x",850)
-//       .attr("y",690)
-//       ;
-//       datagroups1.transition().duration(1000).attr("transform",randomPosition);
-// };
+function shortViz(enhancedData){
+  function randomPosition(d,i){
+
+    if(d.words<200000){
+      let x = Math.random()*500;
+      let y=  Math.random()*700+100;
+      return "translate("+x+","+y+")"
+
+    }else if(d.words>=200000,d.words<1000000){
+      let x = Math.random()*200+600;
+      let y=  Math.random()*200+300;
+      return "translate("+x+","+y+")"
+
+    }else{
+      let x = Math.random()*25+650;
+      let y=  Math.random()*25+650;
+      return "translate("+x+","+y+")"
+    }
+  };
+  function colorh(d,i){
+
+    if(d.words<200000){
+
+      return "white";
+
+    }else if (d.words>=200000,d.words<1000000){
+
+      return "#F1F2B5";
+
+    }else{
+      return "#12fff7";
+    }
+  };
+
+
+
+      // circles.transition().duration(1000).attr("fill",colorh);
+      let textshort = generalviz
+      .append("text")
+      .text("Short Story")
+      .attr("fill","white")
+      .attr("x",550)
+      .attr("y",115)
+      ;
+      let midshort = generalviz
+      .append("text")
+      .text("Novella")
+      .attr("fill","white")
+      .attr("x",850)
+      .attr("y",515)
+      ;
+      let longshort = generalviz
+      .append("text")
+      .text("Novel")
+      .attr("fill","white")
+      .attr("x",850)
+      .attr("y",690)
+      ;
+      datagroups1.transition().duration(1000).attr("transform",randomPosition);
+};
 /////////////
 
 
@@ -268,9 +268,9 @@ let datagroups1 = generalviz.selectAll(".generaldatagroup").data(incomingData).e
 enterView({
 	selector: '.enter',
 	enter: function(el) {
-		// shortViz();
-    // xAxisGroup.remove();
-    // yAxisGroup.remove();
+		shortViz();
+    xAxisGroup.remove();
+    yAxisGroup.remove();
 	},
 	exit: function(el) {
     console.log('a special element exited');
@@ -619,7 +619,7 @@ function drawviz(){
   enterView({
   	selector: '.enter0',
   	enter: function(el) {
-      // drawviz();
+      drawviz();
   	},
   	exit: function(el) {
       console.log('a special element exited');
@@ -682,7 +682,7 @@ function drawviz(){
 enterView({
   selector: '.enter1',
   enter: function(el) {
-    // fandom1viz();
+    fandom1viz();
   },
   exit: function(el) {
     console.log('a special element exited');
@@ -738,7 +738,7 @@ function fandom2viz(){
 enterView({
   selector: '.enter2',
   enter: function(el) {
-    // fandom2viz();
+    fandom2viz();
   },
   exit: function(el) {
     console.log('a special element exited');
@@ -795,7 +795,7 @@ function fandom3viz(){
 enterView({
   selector: '.enter3',
   enter: function(el) {
-    // fandom3viz();
+    fandom3viz();
   },
   exit: function(el) {
     console.log('a special element exited');
@@ -851,7 +851,7 @@ function fandom4viz(){
 enterView({
   selector: '.enter4',
   enter: function(el) {
-    // fandom4viz();
+    fandom4viz();
   },
   exit: function(el) {
     console.log('a special element exited');
