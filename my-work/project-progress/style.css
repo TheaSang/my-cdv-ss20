@@ -1,0 +1,260 @@
+body{
+  /* background-color: black; */
+  height: 100%;
+  width: 100%;
+  margin:0;
+
+}
+@font-face {
+  font-family: AbrilFatface-Regular;
+  src: url(AbrilFatface-Regular.ttf);
+}
+@font-face {
+  font-family: LobsterTwo-ltalic;
+  src: url(LobsterTwo-ltalic.ttf);
+}
+@font-face {
+  font-family: CormorantGaramond-Light;
+  src: url(CormorantGaramond-Light.ttf);
+}
+@font-face {
+  font-family: CormorantGaramond-MediumItalic;
+  src: url(CormorantGaramond-MediumItalic.ttf);
+}
+@font-face {
+  font-family: CormorantGaramond-Regular;
+  src: url(CormorantGaramond-Bold.ttf);
+}
+#background{
+  width: 100%;
+  height: 100%;
+left:0;
+right: 0;
+bottom: 0;
+min-width: 0;
+min-height: 0
+-webkit-filter:brightness(0.9);
+position: fixed;
+z-index: -10;
+}
+
+#Hogwarts{
+    width: 100%;
+    height:700px;
+    position:absolute;
+    top:75px;
+    z-index:-1;
+    opacity: 0.5;
+
+}
+
+.covercontainer{
+  height: 875px;
+  width: 100%;
+  position:absolute;
+  overflow: scroll;
+
+}
+.covercontainer::-webkit-scrollbar {display: none}
+/* COVER PALCE */
+.cover{
+  background-color: #304352;
+  position:absolute;
+  height:700px;
+  width: 100%;
+  top:75px;
+
+  /* background-color:#434e52; */
+}
+#titletext{
+  color: #eae7d9;
+  width: 400px;
+  font-size: 58px;
+  position:absolute;
+  text-align: left;
+  left:350px;
+  top:50px;
+  margin: 0;
+  font-family:AbrilFatface-Regular;
+
+}
+#introtext{
+  color: white;
+  font-size: 18px;
+  width:270px;
+  height: 400px;
+  position:absolute;
+  text-align: left;
+  left:850px;
+  top: 90px;
+  margin 0;
+  font-family:CormorantGaramond-Light;
+  line-height: 28px;
+
+}
+#explain1{
+  color: white;
+  font-size: 30px;
+  width:250px;
+  height: 100px;
+  position:absolute;
+  text-align: left;
+  left:350px;
+  top: 300px;
+  margin 0;
+  font-family:CormorantGaramond-MediumItalic;
+
+}
+#explain2{
+  color: white;
+  font-size: 20px;
+  width:250px;
+  height: 100px;
+  position:absolute;
+  text-align: left;
+  left:350px;
+  top: 440px;
+  margin 0;
+  font-family:CormorantGaramond-Light;
+
+
+}
+/* COVER OVER */
+.entertext{
+  /* background-color: black; */
+  position:absolute;
+  height:750px;
+  width: 100%;
+  top:900px;
+  /* background-color: white; */
+  margin: 0;
+
+  /* background-color:white; */
+}
+
+
+
+#generalcontainer{
+    position:absolute;
+    top:0;
+    left:45vw;
+    margin: 0;
+    width: 50vh;
+
+
+  }
+#relationshipcontainer{
+  position:absolute;
+  top:0;
+  left:45vw;
+  margin: 0;
+  width: 50vw;
+
+}
+#fandomcontainer{
+  position:absolute;
+  top:0;
+  left:45vw;
+  margin: 0;
+  width: 50vw;
+
+}
+#deathcontainer{
+  position:absolute;;
+  width:100vw;
+  height: 100vh;
+  top:0;
+}
+  .generalViz{
+    position: absolute;
+    top:100vh;
+
+  }
+
+
+article p{
+  margin-bottom:500px;
+  /* outline: #eae7d9 solid 1.5px; */
+  margin-left: 8vw;
+  text-align: left;
+  font-family: CormorantGaramond-Regular;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #eae7d9;
+  width:26vw;
+  margin-right: auto;
+}
+article{
+left: 5vw;
+width: 35vw;
+}
+mark{
+  background-color: #304352;
+  color:white;
+  font-size: 40px;
+  font-family: AbrilFatface-Regular;
+  width:200px;
+
+}
+#mark{
+  background-color: #304352;
+  color:white;
+  font-size: 21px;
+  font-family: AbrilFatface-Regular;
+  width:200px;
+}
+article h1{
+  margin-bottom:500px;
+  /* outline: #eae7d9 solid 1.5px; */
+  margin-left: 8vw;
+  text-align: left;
+  font-family: AbrilFatface-Regular;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 70px;
+  color: #eae7d9;
+  width:26vw;
+  margin-right: auto;
+}
+
+.stickyItem{
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+  position: sticky;
+
+}
+.relationshipViz{
+  position:absolute;
+  top:5800px;
+  width: 0;
+}
+
+.fandomViz{
+    position:absolute;
+    top:9875px;
+  }
+  .deathViz{
+      position:absolute;
+      top:15000px;
+      width: 0;
+    }
+  section{
+    width: 100vw;
+  }
+  #introtext2{
+    color: white;
+    font-size: 18px;
+    width:300px;
+    height: 400px;
+    position:absolute;
+    text-align: center;
+    left:850px;
+    top: 300px;
+    margin 0;
+    font-family:CormorantGaramond-Light;
+    line-height: 28px;
+
+  }
