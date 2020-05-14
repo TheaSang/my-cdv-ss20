@@ -1,0 +1,499 @@
+body{
+  /* background-color: black; */
+  height: 100%;
+  width: 100%;
+  margin:0;
+
+}
+@font-face {
+  font-family: AbrilFatface-Regular;
+  src: url(AbrilFatface-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-Light;
+  src: url(Lato-Light.ttf);
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url(Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: CormorantGaramond-MediumItalic;
+  src: url(CormorantGaramond-MediumItalic.ttf);
+}
+
+
+@font-face {
+  font-family: DrSugiyama-Regular;
+  src: url(DrSugiyama-Regular.ttf);
+}
+@font-face {
+  font-family: UnifrakturCook-Bold;
+  src: url(UnifrakturCook-Bold.ttf);
+}
+
+
+#background{
+  width: 100vw;
+  height: 100%;
+left:0;
+right: 0;
+bottom: 0;
+min-width: 0;
+min-height: 0
+-webkit-filter:brightness(0.9);
+position: fixed;
+z-index: -10;
+margin: 0;
+
+}
+#blue{
+  position:absolute;
+  top:300px;
+  left:700px;
+  width: 450px;
+
+    border-radius:50%;
+
+}
+#blue3{
+  position:absolute;
+  top:770px;
+  left: 48%;
+  width: 60px;
+  opacity: 0.5;
+
+
+
+}
+#picgeneral{
+  position:absolute;
+  top:100vh;
+  width: 100%;
+  opacity: 0.5;
+
+}
+
+#Hogwarts{
+    width: 60%;
+    height:700px;
+    position:absolute;
+    top:75px;
+    z-index:-1;
+    opacity: 0.5;
+
+
+}
+
+.covercontainer{
+  height: 100vh;
+  width: 100vw;
+  position:absolute;
+  /* background-color: white; */
+  /* opacity: 0.4; */
+  /* overflow: scroll; */
+  background-color: black;
+  z-index: -1;
+  margin: 0;
+
+}
+.picturecontainer{
+  /* display: inline;
+  float: left; */
+  display: flex;
+  margin: 0;
+  position:absolute;
+  top:10vh;
+}
+.school{
+  width:25vw;
+  height: 65vh;
+  top:10vh;
+  border-radius:20%;
+  box-shadow:0 0 30px 10px black inset;
+
+
+  /* display: inline; */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+}
+
+
+
+
+
+/* .covercontainer::-webkit-scrollbar {display: none} */
+/* COVER PALCE */
+/* .cover{
+  background-color: #748B84;
+  position:absolute;
+  height:700px;
+  width: 100%;
+  top:75px; */
+
+  /* background-color:#434e52;
+} */
+
+
+#titletext{
+  color: rgb(239,243,239);
+  width: 450px;
+  font-size: 90px;
+  position:absolute;
+
+  text-align: left;
+  left:-1000px;
+  top:100px;
+  margin: 0;
+  font-family:UnifrakturCook-Bold;
+
+}
+#introtext{
+  color: white;
+  font-size: 20px;
+  width:420px;
+  height: 340px;
+  position:absolute;
+  text-align: left;
+  left:1100px;
+  top: -1000px;
+  margin 0;
+  font-family:DrSugiyama-Regular;
+  line-height: 40px;
+
+
+}
+
+#explain2{
+  color: white;
+  font-size: 30px;
+  width:400px;
+  height: 100px;
+  position:absolute;
+  text-align: left;
+  left:-1000px;
+  top: 580px;
+  margin 0;
+  font-family:CormorantGaramond-MediumItalic;
+
+
+}
+/* COVER OVER */
+.entertext{
+  /* background-color: black; */
+  position:absolute;
+  height:750px;
+  width: 100%;
+  top:900px;
+  /* background-color: white; */
+  margin: 0;
+
+  /* background-color:white; */
+}
+.questions{
+  position:fixed;
+  background-color: #121f1f;
+
+  width: 200px;
+  height: 140px;
+  top:20px;
+  right: 100px;
+  text-align: center;
+  z-index: 700;
+  opacity: 0;
+
+}
+
+
+#generalcontainer{
+    position:absolute;
+    top:100px;
+    left:45vw;
+    margin: 0;
+    width: 40vw;
+
+
+  }
+#relationshipcontainer{
+  position:absolute;
+  top:60px;
+  left:45vw;
+  margin: 0;
+  width: 40vw;
+
+}
+#fandomcontainer{
+  position:absolute;
+  top:80px;
+  left:45vw;
+  margin: 0;
+  width: 40vw;
+
+}
+#deathcontainer{
+  position:absolute;;
+  width:100vw;
+  height: 100vh;
+  top:40px;
+}
+  .generalViz{
+    position: absolute;
+    top:1000px;
+
+  }
+
+
+article p{
+  margin-bottom:200px;
+  /* outline: #eae7d9 solid 1.5px; */
+  margin-left: 8vw;
+  text-align: left;
+  font-family: Lato-Light;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: white;
+  width:26vw;
+  margin-right: auto;
+}
+#aboutustext p{
+  /* margin-bottom:200px; */
+  /* outline: #eae7d9 solid 1.5px; */
+  margin-left: 20vw;
+  text-align: left;
+  font-family: Lato-Light;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: white;
+  width:60vw;
+  margin-right: auto;
+
+}
+#newstext p{
+  /* margin-bottom:200px; */
+  /* outline: #eae7d9 solid 1.5px; */
+  margin-left: 20vw;
+  text-align: left;
+  font-family: Lato-Light;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: white;
+  width:60vw;
+  margin-right: auto;
+
+}
+#fqatext p{
+  /* margin-bottom:200px; */
+  /* outline: #eae7d9 solid 1.5px; */
+  margin-left: 20vw;
+  text-align: left;
+  font-family: Lato-Light;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: white;
+  width:60vw;
+  margin-right: auto;
+
+}
+article{
+left: 20vw;
+width: 35vw;
+
+}
+mark{
+  background-color: #00274d;
+  color:white;
+  font-size: 40px;
+  font-family: AbrilFatface-Regular;
+  width:200px;
+
+}
+#mark{
+  background-color: #00274d;
+  color:white;
+  font-size: 21px;
+  font-family: AbrilFatface-Regular;
+  width:200px;
+}
+article h1{
+  /* margin-bottom:400px; */
+  /* outline: #eae7d9 solid 1.5px; */
+  margin-left: 8vw;
+  text-align: left;
+  font-family: AbrilFatface-Regular;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 70px;
+  color: #eae7d9;
+  width:26vw;
+  margin-right: auto;
+}
+
+.stickyItem{
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+  position: sticky;
+
+}
+.relationshipViz{
+  position:absolute;
+  top:3500px;
+  width: 0;
+}
+
+.fandomViz{
+    position:absolute;
+    top:6500px;
+  }
+  .deathViz{
+      position:absolute;
+      top:8700px;
+      width: 0;
+    }
+    .aboutusViz{
+      position: absolute;
+      top:11100px;
+      height: 500px;
+
+
+
+
+    }
+    .newsViz{
+      position: absolute;
+      top:13000px;
+      height: 500px;
+
+
+
+
+    }
+    .fqaViz{
+      position: absolute;
+      top:14500px;
+      height: 500px;
+
+
+
+
+    }
+
+    #aboutussticky{
+      height: 100px;
+    }
+    #newssticky{
+      height: 0px;
+    }
+    #fqasticky{
+      height: 0px;
+    }
+  section{
+    width: 100vw;
+  }
+  #content{
+    width:500px;
+    padding:  30px;
+    position:absolute;
+    background: #003333;
+    top:250px;
+    left:800px;
+    opacity: 0;
+
+
+
+  }
+  #content p{
+      font-family: Lato-Regular;
+      color: white;
+      line-height: 1.7;
+
+
+
+
+  }
+
+  #linkgeneral{
+    position:absolute;
+    top:1000px;
+    opacity: 0;
+  }
+  /* make anchor */
+#linkaboutus{
+  position:absolute;
+  top:11100px;
+  opacity: 0;
+
+}
+#linknews{
+  position:absolute;
+  top:12800px;
+  opacity: 0;
+
+}
+#linkfaq{
+  position:absolute;
+  top:14300px;
+  opacity: 0;
+
+}
+
+  .logo{
+    position: fixed;
+    top: 0;
+    /* left:100px; */
+    font-family: UnifrakturCook-Bold;
+    font-size: 30px;
+    color: white;
+    z-index: 600;
+    width: 100%;
+    background-color: black;
+  }
+  .logo p{
+    padding-left: 100px;
+    padding-bottom: 10px;
+  }
+
+  .anchor{
+    position:fixed;
+    /* left:100px; */
+    top:80px;
+display: flex;
+z-index: 600;
+width: 100%;
+
+  }
+  .find{
+
+    z-index: 600;
+    color:white;
+    font-size: 1rem;
+    font-family: Lato-Light;
+    text-decoration: none;
+    background: black;
+    /* display: flex; */
+    /* flex-direction: row;
+
+    /* line-height: 35px; */ */
+
+    text-align: left;
+  padding-left: 100px;
+    width: 120px;
+
+
+
+  }
+
+  .find:hover{
+    color:white;
+  }
+  a{
+    color:darkgrey;
+  }
